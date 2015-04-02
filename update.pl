@@ -6,6 +6,6 @@ $listF = "~/list.worker";
 $dir = shift; die if not $dir;
 
 foreach $n (@nodes) {
-        print "****** $n ******\n";
+	print "****** $n ******\n";
 	system("rsync -avr $dir $n:");
 }
